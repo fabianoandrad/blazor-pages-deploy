@@ -39,14 +39,14 @@ jobs:
       - name: Build Project
         run: dotnet build -c Release --no-restore
 
-      - name: Publish Project
+      - name: Publish Project .NET
         run: dotnet publish BlazorDeploy.csproj -c Release -o docs --no-logo
 
       - name: Deploy to GitHub Pages
         uses: actions/confgure-pages@v4
 
       - name: Upload
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         
       - name: Deployment
         id: deployment
