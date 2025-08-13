@@ -43,7 +43,7 @@ jobs:
         run: dotnet publish BlazorDeploy.csproj -c Release -o docs --no-logo
 
       - name: Deploy to GitHub Pages
-        uses: actions/confgure-pages@v4
+        uses: actions/configure-pages@v4
 
       - name: Upload
         uses: actions/upload-pages-artifact@v3
