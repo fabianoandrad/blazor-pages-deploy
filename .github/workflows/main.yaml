@@ -40,7 +40,7 @@ jobs:
         run: dotnet build -c Release --no-restore
 
       - name: Publish Project .NET
-        run: dotnet publish BlazorDeploy.csproj -c Release -o docs --no-logo
+        run: dotnet publish BlazorDeploy.csproj -c:Release -o docs --nologo
 
       - name: Deploy to GitHub Pages
         uses: actions/configure-pages@v4
